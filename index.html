@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootystrap</title>
+ 
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-dark" data-spy="scroll" data-target="#navBar" class="scrollspy-example z-depth-1 mt-4" data-offset="0">
+      
+    <!-- NAVIGATION BAR-->
+    <nav id="navBar" class="navbar navbar-expand-sm sticky-top navbar-light mb-1 bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-around offset-lg-1"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item btn border btn-info mr-md-3">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item btn border btn-info mr-md-3">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item dropdown btn border btn-info mr-md-3">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+              >Library</a
+            >
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">3</a>
+            </div>
+          </li>
+          <li class="nav-item btn border btn-info mr-md-3">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item btn border btn-info">
+            <a class="nav-link" data-toggle="modal" data-target="#contact" role="button">Contact</a>
+            
+          </li>
+        </ul>
+        
+      </div>
+      
+      <!-- Sign up bar -->
+      <ul class="navbar navbar-nav">
+            <li class="dropdown">	
+              <a href="#" class="dropdown-toggle btn border btn-info" data-toggle="dropdown" role="button">
+                Sign In<span class="caret"></span>
+              </a>
+      
+              <div class="dropdown-menu p-4" id="formLogin"  style="width: 300px; left: -233px">
+                  <div class="row">
+                      <div class="container-fluid">
+                          <form class="">
+                              <div class="form-group">
+                                  <label class="">E-mail</label>
+                                  <input class="form-control" name="email" id="email" type="text" autocomplete="off" placeholder="Enter email">
+                                  <span id="emailMsg"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label class="">Password</label>
+                                  <input class="form-control" name="password" id="pass" type="password" placeholder="Enter password">
+                                  <span id="passMsg"></span>
+                                  <br class="">
+                                  
+                              </div>
+                              <div class="justify-content-between">
+                              <button type="submit" id="btnLogin" class="btn btn-primary border btn-sm">
+                                  Login
+                                </button>
+                                
+                              <button type="button" class="btn btn-primary btn-sm border" data-toggle="modal" data-target="#signup">Sign Up</button>
+                            </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </li>
+            <li>
+            </li>
+        </ul>
+    </nav>
+    <div>
+    <!-- TOP TEXT-->
+    <h1 id="top" class="text-center text-info">HOME</h1>
+    <!-- MID CONTENT-->
+    <div id="home" class="container row offset-sm-1 offset-md-2 offset-lg-2">
+      <!-- JUMOTRON -->
+      <div class="jumbotron col col-md-10 px-md-5">
+        <h1 class="display-4">Hello, world!</h1>
+
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          mollitia labore sunt, culpa delectus reprehenderit impedit harum?
+          Commodi consequuntur saepe modi accusamus earum id, voluptatem laborum
+          natus dolorem dolore placeat.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Knapp</a>
+      </div>
+    </div>
+    <!-- CARD -->
+    <div id="gallery" class="container">
+      <div class="row col justify-content-around">
+        <div class="card col-md-3 m-1">
+          <img
+            src="http://cmeducations.se/wp-content/uploads/2018/10/CME_circlesymbol_RGB.png"
+            class="card-img-top"
+            alt="cme"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CM Educations</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              consequatur vitae ducimus optio temporibus esse accusamus sint
+              eius alias perspiciatis quo minima iste quibusdam voluptatum aut,
+              vero modi, sed magnam?
+            </p>
+            <a
+              href="http://cmeducations.se/utbildningar/program/webbutvecklare-e-handel-boden"
+              target="_blank"
+              class="btn btn-primary"
+              >Till sidan</a
+            >
+          </div>
+        </div>
+        <div class="card col-md-3 m-1">
+          <img
+            src="http://cmeducations.se/wp-content/uploads/2018/10/CME_circlesymbol_RGB.png"
+            class="card-img-top"
+            alt="cme"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CM Educations</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              consequatur vitae ducimus optio temporibus esse accusamus sint
+              eius alias perspiciatis quo minima iste quibusdam voluptatum aut,
+              vero modi, sed magnam?
+            </p>
+            <a
+              href="http://cmeducations.se/utbildningar/program/webbutvecklare-e-handel-boden"
+              target="_blank"
+              class="btn btn-primary"
+              >Till sidan</a
+            >
+          </div>
+        </div>
+        <div class="card col-md-3 m-1">
+          <img
+            src="http://cmeducations.se/wp-content/uploads/2018/10/CME_circlesymbol_RGB.png"
+            class="card-img-top"
+            alt="cme"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CM Educations</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              consequatur vitae ducimus optio temporibus esse accusamus sint
+              eius alias perspiciatis quo minima iste quibusdam voluptatum aut,
+              vero modi, sed magnam?
+            </p>
+            <a
+              href="http://cmeducations.se/utbildningar/program/webbutvecklare-e-handel-boden"
+              target="_blank"
+              class="btn btn-primary"
+              >Till sidan</a
+            >
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<!-- ABOUT SECTION -->
+<div id="about" class="container z-depth-1 my-5 py-5">
+
+    <section class="bg-info border">
+      
+  
+      <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">Services</h6>
+      <h3 class="font-weight-bold text-center dark-grey-text pb-2">Our Services</h3>
+      <hr class="w-header my-4">
+      <p class="lead text-center pt-2 mb-5">Join thousands of satisfied customers using our template
+        globally.</p>
+  
+      <div class="row d-flex justify-content-center">
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><h3 href="#">Website
+              Design</h3></h5>
+          <p class="mb-5 pb-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat consectetur, non quam itaque vero atque a eaque, odio maxime quidem, eos voluptatem alias expedita pariatur officia aspernatur ab. Animi, fugit..</p>
+        </div>
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><h3
+              href="#">Application Development</h3></h5>
+          <p class="mb-5 pb-md-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iusto obcaecati earum qui, blanditiis at ratione rerum ab. Debitis voluptatem ipsa harum et dolore cum repellat omnis soluta voluptas quas.</p>
+        </div>
+  
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><h3 class="dark-grey-text" href="#">Branding
+              Package</h3></h5>
+          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, et amet magni aliquid nostrum sit, ab illo deserunt fugit quo, adipisci rerum in? Necessitatibus voluptate explicabo debitis, sit dolor voluptatibus.</p>
+        </div>
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><h3 class="dark-grey-text"
+              href="#">Advertisement</h3></h5>
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus neque aliquid quod blanditiis nesciunt et, eveniet, a modi adipisci nisi voluptate doloremque molestias natus id deserunt cupiditate voluptas, eos ea!</p>
+        </div>
+  
+      </div>
+    </section>
+    <!-- Section -->
+  
+  </div>
+   <!-- FOOTER --> 
+    <footer class="page-footer font-small bg-info pt-4">
+        <div class="container-fluid text-center text-md-left">
+     
+          <div class="row">
+           <div class="col-md-5 mt-md-0 mt-3">
+            <h5 class="text-uppercase">THIS IS MY FOOTER</h5>
+            <p>This is the very bottom of the page<br>Thank you for scrolling all the way down here!</p>
+     
+           </div>
+           <hr class="clearfix w-100 d-md-none pb-3">
+           <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">LINKS</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+            </ul>  
+           </div>
+           <div class="col-md-3 mb-md-0 mb-3">
+             <h5 class="text-uppercase" href="#navBar"><a href="#top">BACK TO TOP</a></h5>
+           </div>
+         </div>
+          </div>
+          <div class="footer-copyright text-center py-3">© 2019 Copyright:
+             <a href="#"> mattiasakerlund.com</a>
+           </div>
+      </footer>
+<!-- DIVERSE INNHÅLL HÄR NEDANFÖR-->
+
+
+     <!-- CONTACT MODAL -->
+     <div class="modal" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="contactLabel">Contact</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                          
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                        <div class="container-fluid">
+                                <form class="">
+                                    <div class="form-group">
+                                        <label class="">Name</label>
+                                        <input class="form-control" name="name" type="text" autocomplete="off" placeholder="Enter your name">
+                                       
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">E-mail</label>
+                                        <input class="form-control" name="email" type="text" autocomplete="off" placeholder="Enter email">
+                                       
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="message-text" class="col-form-label">Message</label>
+                                      <textarea class="form-control" id="message-text"></textarea>
+                                        
+                                        <br class="">
+                                        
+                                    </div>
+                  </div>
+                  <!-- Footer -->
+                  <div class="modal-footer">
+                      <button type="button" class="btn-primary btn border" data-target="">Send</button>
+                        <button type="button" class="btn border btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                 </div>
+             </div>
+           </div>
+         </div>
+          
+    <!-- SIGN UP MODAL -->
+    <div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="signupLabel">Sign Up</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                          
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                        <div class="container-fluid">
+                                <form class="">
+                                    <div class="form-group">
+                                        <label class="">E-mail</label>
+                                        <input class="form-control" name="email" type="text" autocomplete="off" placeholder="Enter email">
+                                       
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">Password</label>
+                                        <input class="form-control" name="password" type="password" placeholder="Enter password">
+                                        
+                                        <br class="">
+                                    </div>
+                  </div>
+                  <!--Modal Footer -->
+                  <div class="modal-footer">
+                      <button type="button" class="btn-primary btn border" data-target="#">Sign Up</button>
+                        <button type="button" class="btn border btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+             </div>
+          </div>
+          </div>
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
